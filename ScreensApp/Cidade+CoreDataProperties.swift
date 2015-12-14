@@ -1,5 +1,5 @@
 //
-//  Usuario+CoreDataProperties.swift
+//  Cidade+CoreDataProperties.swift
 //  ScreensApp
 //
 //  Created by Student on 12/14/15.
@@ -12,15 +12,10 @@
 import Foundation
 import CoreData
 
-extension Usuario {
+extension Cidade {
 
     @NSManaged var codigo: NSNumber?
-    @NSManaged var email: String?
     @NSManaged var nome: String?
-    @NSManaged var senha: String?
-    @NSManaged var sexo: String?
-    @NSManaged var telefone: NSNumber?
-    @NSManaged var viber: NSNumber?
-    @NSManaged var whatsapp: NSNumber?
+    @NSManaged var ddd: NSNumber?
 
 }

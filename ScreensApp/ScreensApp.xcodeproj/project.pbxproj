@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F058D4C1C1F4DB30071105E /* Cidade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058D4A1C1F4DB30071105E /* Cidade+CoreDataProperties.swift */; };
+		3F058D4D1C1F4DB30071105E /* Cidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058D4B1C1F4DB30071105E /* Cidade.swift */; };
 		3F151CA21C1A011600D92DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CA11C1A011600D92DC2 /* AppDelegate.swift */; };
 		3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CA31C1A011600D92DC2 /* ViewController.swift */; };
 		3F151CA71C1A011600D92DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F151CA51C1A011600D92DC2 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F058D4A1C1F4DB30071105E /* Cidade+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cidade+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F058D4B1C1F4DB30071105E /* Cidade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cidade.swift; sourceTree = "<group>"; };
 		3F151C9E1C1A011600D92DC2 /* ScreensApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreensApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F151CA11C1A011600D92DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F151CA31C1A011600D92DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		3FB7DDC11C1F287500FFD4C0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				3F058D4A1C1F4DB30071105E /* Cidade+CoreDataProperties.swift */,
+				3F058D4B1C1F4DB30071105E /* Cidade.swift */,
 				3FB7DDC41C1F459300FFD4C0 /* Evento+CoreDataProperties.swift */,
 				3FB7DDC51C1F459300FFD4C0 /* Evento.swift */,
 				3FB7DDC61C1F459300FFD4C0 /* Usuario+CoreDataProperties.swift */,
@@ -279,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F058D4D1C1F4DB30071105E /* Cidade.swift in Sources */,
 				3F151CAA1C1A011600D92DC2 /* ScreensApp.xcdatamodeld in Sources */,
 				3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */,
 				3FB7DDCB1C1F459300FFD4C0 /* Usuario.swift in Sources */,
@@ -286,6 +293,7 @@
 				3FB7DDC81C1F459300FFD4C0 /* Evento+CoreDataProperties.swift in Sources */,
 				3F151CA21C1A011600D92DC2 /* AppDelegate.swift in Sources */,
 				3FB7DDC91C1F459300FFD4C0 /* Evento.swift in Sources */,
+				3F058D4C1C1F4DB30071105E /* Cidade+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
