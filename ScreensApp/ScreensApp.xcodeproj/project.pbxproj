@@ -18,6 +18,7 @@
 		3F151CBA1C1A011600D92DC2 /* ScreensAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CB91C1A011600D92DC2 /* ScreensAppTests.swift */; };
 		3F151CC51C1A011600D92DC2 /* ScreensAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		3F1CCCD31C1F4336002E8E7D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CCCD21C1F4336002E8E7D /* TableViewCell.swift */; };
 =======
 		3FB7DDC81C1F459300FFD4C0 /* Evento+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7DDC41C1F459300FFD4C0 /* Evento+CoreDataProperties.swift */; };
@@ -25,6 +26,8 @@
 		3FB7DDCA1C1F459300FFD4C0 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7DDC61C1F459300FFD4C0 /* Usuario+CoreDataProperties.swift */; };
 		3FB7DDCB1C1F459300FFD4C0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7DDC71C1F459300FFD4C0 /* Usuario.swift */; };
 >>>>>>> origin/master
+=======
+>>>>>>> parent of db20232... link das telas e criacao da TableViewController
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,7 @@
 		3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensAppUITests.swift; sourceTree = "<group>"; };
 		3F151CC61C1A011600D92DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		3F1CCCD21C1F4336002E8E7D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 =======
 		3FB7DDC41C1F459300FFD4C0 /* Evento+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Evento+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		3FB7DDC61C1F459300FFD4C0 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FB7DDC71C1F459300FFD4C0 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 >>>>>>> origin/master
+=======
+>>>>>>> parent of db20232... link das telas e criacao da TableViewController
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +159,10 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				3F1CCCD21C1F4336002E8E7D /* TableViewCell.swift */,
+=======
+>>>>>>> parent of db20232... link das telas e criacao da TableViewController
 			);
 			name = "New Group";
 =======
@@ -301,7 +310,6 @@
 			files = (
 				3F058D4D1C1F4DB30071105E /* Cidade.swift in Sources */,
 				3F151CAA1C1A011600D92DC2 /* ScreensApp.xcdatamodeld in Sources */,
-				3F1CCCD31C1F4336002E8E7D /* TableViewCell.swift in Sources */,
 				3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */,
 				3FB7DDCB1C1F459300FFD4C0 /* Usuario.swift in Sources */,
 				3FB7DDCA1C1F459300FFD4C0 /* Usuario+CoreDataProperties.swift in Sources */,

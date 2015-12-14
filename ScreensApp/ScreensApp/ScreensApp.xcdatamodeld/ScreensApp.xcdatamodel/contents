@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
 <<<<<<< HEAD
     <entity name="Entity" syncable="YES"/>
@@ -43,4 +44,8 @@
         <element name="Cidade" positionX="-54" positionY="135" width="128" height="90"/>
 >>>>>>> origin/master
     </elements>
+=======
+<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <elements/>
+>>>>>>> parent of db20232... link das telas e criacao da TableViewController
 </model>
