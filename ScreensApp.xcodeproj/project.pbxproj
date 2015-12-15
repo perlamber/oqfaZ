@@ -15,6 +15,7 @@
 		3F151CAF1C1A011600D92DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F151CAD1C1A011600D92DC2 /* LaunchScreen.storyboard */; };
 		3F151CBA1C1A011600D92DC2 /* ScreensAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CB91C1A011600D92DC2 /* ScreensAppTests.swift */; };
 		3F151CC51C1A011600D92DC2 /* ScreensAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */; };
+		3F276D601C20889B0068B95D /* ViewControllerAddEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F276D5F1C20889B0068B95D /* ViewControllerAddEvento.swift */; };
 		3F4008251C207AB8002D2611 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40081F1C207AB8002D2611 /* Usuario+CoreDataProperties.swift */; };
 		3F4008261C207AB8002D2611 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008201C207AB8002D2611 /* Usuario.swift */; };
 		3F4008291C207AB8002D2611 /* Categoria+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008231C207AB8002D2611 /* Categoria+CoreDataProperties.swift */; };
@@ -55,6 +56,7 @@
 		3F151CC01C1A011600D92DC2 /* ScreensAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreensAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensAppUITests.swift; sourceTree = "<group>"; };
 		3F151CC61C1A011600D92DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F276D5F1C20889B0068B95D /* ViewControllerAddEvento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAddEvento.swift; sourceTree = "<group>"; };
 		3F40081F1C207AB8002D2611 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Usuario+CoreDataProperties.swift"; path = "ScreensApp/Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F4008201C207AB8002D2611 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = ScreensApp/Usuario.swift; sourceTree = "<group>"; };
 		3F4008231C207AB8002D2611 /* Categoria+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Categoria+CoreDataProperties.swift"; path = "ScreensApp/Categoria+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				3F151CA11C1A011600D92DC2 /* AppDelegate.swift */,
 				3F151CA31C1A011600D92DC2 /* ViewController.swift */,
 				3F151CA51C1A011600D92DC2 /* Main.storyboard */,
+				3F276D5F1C20889B0068B95D /* ViewControllerAddEvento.swift */,
 				3F151CAB1C1A011600D92DC2 /* Assets.xcassets */,
 				3F151CAD1C1A011600D92DC2 /* LaunchScreen.storyboard */,
 				3F151CB01C1A011600D92DC2 /* Info.plist */,
@@ -280,6 +283,7 @@
 				3F4008251C207AB8002D2611 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F151CAA1C1A011600D92DC2 /* ScreensApp.xcdatamodeld in Sources */,
 				3F40082E1C207BA7002D2611 /* Evento.swift in Sources */,
+				3F276D601C20889B0068B95D /* ViewControllerAddEvento.swift in Sources */,
 				3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */,
 				3F4008291C207AB8002D2611 /* Categoria+CoreDataProperties.swift in Sources */,
 				3F40082D1C207BA7002D2611 /* Evento+CoreDataProperties.swift in Sources */,
