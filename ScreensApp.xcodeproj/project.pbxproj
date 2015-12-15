@@ -15,6 +15,12 @@
 		3F151CAF1C1A011600D92DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F151CAD1C1A011600D92DC2 /* LaunchScreen.storyboard */; };
 		3F151CBA1C1A011600D92DC2 /* ScreensAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CB91C1A011600D92DC2 /* ScreensAppTests.swift */; };
 		3F151CC51C1A011600D92DC2 /* ScreensAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */; };
+		3F4008251C207AB8002D2611 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40081F1C207AB8002D2611 /* Usuario+CoreDataProperties.swift */; };
+		3F4008261C207AB8002D2611 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008201C207AB8002D2611 /* Usuario.swift */; };
+		3F4008291C207AB8002D2611 /* Categoria+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008231C207AB8002D2611 /* Categoria+CoreDataProperties.swift */; };
+		3F40082A1C207AB8002D2611 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008241C207AB8002D2611 /* Categoria.swift */; };
+		3F40082D1C207BA7002D2611 /* Evento+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40082B1C207BA7002D2611 /* Evento+CoreDataProperties.swift */; };
+		3F40082E1C207BA7002D2611 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40082C1C207BA7002D2611 /* Evento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		3F151CC01C1A011600D92DC2 /* ScreensAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreensAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F151CC41C1A011600D92DC2 /* ScreensAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensAppUITests.swift; sourceTree = "<group>"; };
 		3F151CC61C1A011600D92DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F40081F1C207AB8002D2611 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Usuario+CoreDataProperties.swift"; path = "ScreensApp/Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4008201C207AB8002D2611 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = ScreensApp/Usuario.swift; sourceTree = "<group>"; };
+		3F4008231C207AB8002D2611 /* Categoria+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Categoria+CoreDataProperties.swift"; path = "ScreensApp/Categoria+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F4008241C207AB8002D2611 /* Categoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categoria.swift; path = ScreensApp/Categoria.swift; sourceTree = "<group>"; };
+		3F40082B1C207BA7002D2611 /* Evento+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Evento+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F40082C1C207BA7002D2611 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 		3F151C951C1A011600D92DC2 = {
 			isa = PBXGroup;
 			children = (
+				3F40082B1C207BA7002D2611 /* Evento+CoreDataProperties.swift */,
+				3F40082C1C207BA7002D2611 /* Evento.swift */,
+				3F40081F1C207AB8002D2611 /* Usuario+CoreDataProperties.swift */,
+				3F4008201C207AB8002D2611 /* Usuario.swift */,
+				3F4008231C207AB8002D2611 /* Categoria+CoreDataProperties.swift */,
+				3F4008241C207AB8002D2611 /* Categoria.swift */,
 				3F151CA01C1A011600D92DC2 /* ScreensApp */,
 				3F151CB81C1A011600D92DC2 /* ScreensAppTests */,
 				3F151CC31C1A011600D92DC2 /* ScreensAppUITests */,
@@ -259,8 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4008251C207AB8002D2611 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F151CAA1C1A011600D92DC2 /* ScreensApp.xcdatamodeld in Sources */,
+				3F40082E1C207BA7002D2611 /* Evento.swift in Sources */,
 				3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */,
+				3F4008291C207AB8002D2611 /* Categoria+CoreDataProperties.swift in Sources */,
+				3F40082D1C207BA7002D2611 /* Evento+CoreDataProperties.swift in Sources */,
+				3F4008261C207AB8002D2611 /* Usuario.swift in Sources */,
+				3F40082A1C207AB8002D2611 /* Categoria.swift in Sources */,
 				3F151CA21C1A011600D92DC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +512,7 @@
 				3F151CCB1C1A011600D92DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F151CCC1C1A011600D92DC2 /* Build configuration list for PBXNativeTarget "ScreensAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +521,7 @@
 				3F151CCE1C1A011600D92DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F151CCF1C1A011600D92DC2 /* Build configuration list for PBXNativeTarget "ScreensAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +530,7 @@
 				3F151CD11C1A011600D92DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
