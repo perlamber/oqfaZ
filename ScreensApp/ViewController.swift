@@ -62,14 +62,19 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
     
     // TableView DataSource
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        let numberOfSection = fetchedResultController.sections?.count
-        return numberOfSection!
-    }
+//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        let numberOfSection = fetchedResultController.sections?.count
+//        return numberOfSection!
+//    }
+//    
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        let numberOfRowsInSection = fetchedResultController.sections?[section].numberOfObjects
+//        return numberOfRowsInSection!
+//    }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numberOfRowsInSection = fetchedResultController.sections?[section].numberOfObjects
-        return numberOfRowsInSection!
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 8
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
