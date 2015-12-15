@@ -53,7 +53,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="34C-DW-nVr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="34C-DW-nVr" customClass="TableViewCell" customModule="ScreensApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="575" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="34C-DW-nVr" id="ZIB-fo-a7h">
@@ -101,6 +101,9 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="imgImageEvento" destination="ipi-td-aby" id="05L-Hf-CnU"/>
+                                            <outlet property="lblNomeEvento" destination="v80-k3-MJq" id="62w-aF-Apd"/>
+                                            <outlet property="lblNomeRua" destination="pcq-mi-3mv" id="XBt-wB-ACP"/>
                                             <segue destination="Z0q-RM-08f" kind="show" identifier="mostraDescricaoEvento" id="dS5-S1-ION"/>
                                         </connections>
                                     </tableViewCell>
@@ -132,6 +135,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblEventos" destination="SbT-xC-bm2" id="4eu-l1-AMr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2A-ix-uEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

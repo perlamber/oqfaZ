@@ -21,6 +21,7 @@
 		3F40082A1C207AB8002D2611 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4008241C207AB8002D2611 /* Categoria.swift */; };
 		3F40082D1C207BA7002D2611 /* Evento+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40082B1C207BA7002D2611 /* Evento+CoreDataProperties.swift */; };
 		3F40082E1C207BA7002D2611 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40082C1C207BA7002D2611 /* Evento.swift */; };
+		3F4008301C207FE7002D2611 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40082F1C207FE7002D2611 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3F4008241C207AB8002D2611 /* Categoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categoria.swift; path = ScreensApp/Categoria.swift; sourceTree = "<group>"; };
 		3F40082B1C207BA7002D2611 /* Evento+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Evento+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F40082C1C207BA7002D2611 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		3F40082F1C207FE7002D2611 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				3F151CA11C1A011600D92DC2 /* AppDelegate.swift */,
 				3F151CA31C1A011600D92DC2 /* ViewController.swift */,
 				3F151CA51C1A011600D92DC2 /* Main.storyboard */,
+				3F40082F1C207FE7002D2611 /* TableViewCell.swift */,
 				3F151CAB1C1A011600D92DC2 /* Assets.xcassets */,
 				3F151CAD1C1A011600D92DC2 /* LaunchScreen.storyboard */,
 				3F151CB01C1A011600D92DC2 /* Info.plist */,
@@ -282,6 +285,7 @@
 				3F40082E1C207BA7002D2611 /* Evento.swift in Sources */,
 				3F151CA41C1A011600D92DC2 /* ViewController.swift in Sources */,
 				3F4008291C207AB8002D2611 /* Categoria+CoreDataProperties.swift in Sources */,
+				3F4008301C207FE7002D2611 /* TableViewCell.swift in Sources */,
 				3F40082D1C207BA7002D2611 /* Evento+CoreDataProperties.swift in Sources */,
 				3F4008261C207AB8002D2611 /* Usuario.swift in Sources */,
 				3F40082A1C207AB8002D2611 /* Categoria.swift in Sources */,
