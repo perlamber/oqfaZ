@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Categoria" representedClassName=".Categoria" syncable="YES">
+        <attribute name="cat_nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Evento" representedClassName=".Evento" syncable="YES">
+        <attribute name="env_data_ultima_alteracao" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evn_cidade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evn_data_cadastro" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evn_data_evento" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evn_descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evn_endereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evn_imagem" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="evn_local_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="evn_local_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="evn_nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evn_numero" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="categoria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" syncable="YES"/>
+    </entity>
+    <entity name="Usuario" representedClassName=".Usuario" syncable="YES">
+        <attribute name="usu_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_line" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="usu_nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_senha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_sexo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="usu_telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_viber" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="usu_whatsapp" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Usuario" positionX="187" positionY="-225" width="128" height="163"/>
+        <element name="Evento" positionX="-279" positionY="-135" width="128" height="238"/>
+        <element name="Categoria" positionX="-27" positionY="177" width="128" height="58"/>
+    </elements>
 </model>
