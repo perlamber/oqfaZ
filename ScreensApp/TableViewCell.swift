@@ -17,10 +17,6 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        lblNomeEvento.text = evento.evn_nome
-        lblNomeRua.text = evento.evn_endereco
-        imgImageEvento.image = evento.evn_imagem as! UIImage
         // Initialization code
     }
 

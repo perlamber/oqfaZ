@@ -22,12 +22,20 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tblEventos.dataSource = self
+        
         let newEvento = NSEntityDescription.insertNewObjectForEntityForName("Evento", inManagedObjectContext: self.contexto) as! Evento
         
         newEvento.evn_nome = "Evento 1"
         newEvento.evn_endereco = "RUA 01"
         newEvento.evn_imagem = nil 
-
+        
+        do{
+            try contexto.save()
+        }catch _ {
+            print("erro")
+        }
+        
         carregarEventos()
     }
     
@@ -62,35 +70,28 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
     
     // TableView DataSource
     
-//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        let numberOfSection = fetchedResultController.sections?.count
-//        return numberOfSection!
-//    }
-//    
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        let numberOfRowsInSection = fetchedResultController.sections?[section].numberOfObjects
-//        return numberOfRowsInSection!
-//    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 8
-
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        let numberOfSection = fetchedResultController.sections?.count
+        return numberOfSection!
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let numberOfRowsInSection = fetchedResultController.sections?[section].numberOfObjects
+        //print("linhas:", numberOfRowsInSection)
+        return numberOfRowsInSection!
+    }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
         let evento = fetchedResultController.objectAtIndexPath(indexPath) as! Evento
         
-        //cell.evento = evento
-        
         cell.lblNomeEvento.text = evento.evn_nome
-        cell.lblNomeRua.text = evento.evn_endereco
-        
+        //cell.lblNomeRua.text = evento.evn_endereco
+    
         return cell
     }
 
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
