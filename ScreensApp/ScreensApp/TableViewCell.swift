@@ -9,11 +9,12 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblNomeEvento: UILabel!
-    @IBOutlet weak var lblNomeRua: UILabel!
-    @IBOutlet weak var imgImageEvento: UIImageView!
+    @IBOutlet weak var lblNomeCategoria: UILabel!
+    @IBOutlet weak var imgImagemEvento: UIImageView!
     var evento : Evento!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
