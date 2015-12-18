@@ -14,7 +14,8 @@ import MapKit
 class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, MKMapViewDelegate {
 
     let contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-
+    
+    //outlets da view de Cadastro de Eventos
     @IBOutlet weak var categoriaPicker: UIPickerView!
     @IBOutlet weak var imgImageEvento: UIImageView!
     @IBOutlet weak var txtNomeEvento: UITextField!
@@ -27,17 +28,16 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var txtDataEvento: UITextField!
     @IBOutlet weak var theMap: MKMapView!
     
-    var dataEvento: NSDate!
     var evento : Evento! = nil
     var categoriaNome: String!
-    let categorias = ["Show","Festa","Exposição","Inauguração","Teatro","Apresentação Musical","Promoção","Esporte"]
+    let categorias = ["Show","Festa","Exposição","Confraternização","Inauguração","Teatro","Apresentação","Promoção","Esporte"]
     
     let imagePiker = UIImagePickerController()
     
     var manager:CLLocationManager!
     var myLocations: [CLLocation] = []
 
-    
+    //carrega o mapa com a localizacao do usuario
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePiker.delegate = self
@@ -59,6 +59,7 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
         // Do any additional setup after loading the view.
     }
     
+    //metodos do MapKit
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[CLLocation]) {
         //theLabel.text = "\(locations[0])"
         
@@ -90,6 +91,7 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
         // Dispose of any resources that can be recreated.
     }
     
+    //metodos para carregar imagens a galeria de fotos
     @IBAction func btnCarregarImagem(sender: AnyObject) {
         imagePiker.allowsEditing = false
         imagePiker.sourceType = .PhotoLibrary
@@ -112,6 +114,7 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     //MARK: - Delegates and data sources
     //MARK: Data Sources
+    //Metodos que trabalham com o PickerView - Categorias
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -145,7 +148,8 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     
-    // MARK:- Create task
+    // MARK:- Create eveto
+    //Cria evento, insercao direto no banco de dados
     func criaEvento() {
         let entityEvento = NSEntityDescription.entityForName("Evento", inManagedObjectContext: contexto)
         let entityCategoria = NSEntityDescription.entityForName("Categoria", inManagedObjectContext: contexto)
@@ -166,8 +170,6 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
         let data = NSDate()
         formato.dateStyle = NSDateFormatterStyle.ShortStyle
         evento.evn_data_cadastro = formato.stringFromDate(data)
-        //evento.evn_local_latitude --- FAZER COM IMAP - EDUARDO
-        //evento.evn_local_longitude --- FAZER COM IMAP - EDUARDO
         categoria.cat_nome = categoriaNome
         usuario.usu_nome = "Nome Usuario"
         usuario.usu_telefone = txtTelefone.text
@@ -185,6 +187,7 @@ class CadastroViewController: UIViewController, UIPickerViewDataSource, UIPicker
         }
     }
     
+    //pin no mapa
     func inserirPin(cx: Double, cy: Double, name: String){
         let anot: MKPointAnnotation = MKPointAnnotation()
         anot.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(cx),CLLocationDegrees(cy))

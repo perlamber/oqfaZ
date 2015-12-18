@@ -19,17 +19,10 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
     override func viewDidLoad() {
         super.viewDidLoad()
         tblEventos.dataSource = self
-        
-        do{
-            try contexto.save()
-        }catch _ {
-            print("erro")
-        }
-        
         carregarEventos()
     }
     
-    
+    //carrego eventos do banco de dados
     func carregarEventos(){
         fetchedResultController = getFetchedResultController()
         fetchedResultController.delegate = self
@@ -37,18 +30,17 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
         do{
             try fetchedResultController.performFetch()
         } catch let error as NSError {
-            print("Erro ao buscar tarefas: \(error), \(error.userInfo) ")
+            print("Erro ao buscar eventos: \(error), \(error.userInfo) ")
         }
     }
     
     
-    
+    //metodos que complementa o carregamento, passando a Tabela e a Ordenacao que sera realizada
     func getFetchedResultController() -> NSFetchedResultsController {
         fetchedResultController = NSFetchedResultsController( fetchRequest: eventoFetchRequest(), managedObjectContext: contexto, sectionNameKeyPath: nil , cacheName: nil )
         return fetchedResultController
     }
 
-    
     func eventoFetchRequest() -> NSFetchRequest {
         let fetchResquest  = NSFetchRequest(entityName: "Evento")
         let sortDescriptor = NSSortDescriptor(key: "evn_nome", ascending: true)
@@ -70,7 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
         return numberOfRowsInSection!
     }
     
-    
+    //Metodo onde carrego os eventos do banco na tabela principal
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
         let evento = fetchedResultController.objectAtIndexPath(indexPath) as! Evento
@@ -87,7 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
         return cell
     }
 
-    
+    //segue para mostrar as descricoes de um evento
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "mostraDescricaoEvento"{
             if let objEvento = segue.destinationViewController as? EventoDescricaoViewController{
@@ -102,7 +94,8 @@ class ViewController: UIViewController, UITableViewDataSource, NSFetchedResultsC
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //atualizacao da tabela apos algum insert, update ou delete
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         tblEventos.reloadData()
     }

@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    //componentes da celula dentro da tableView
     @IBOutlet weak var lblNomeEvento: UILabel!
     @IBOutlet weak var lblNomeCategoria: UILabel!
     @IBOutlet weak var imgImagemEvento: UIImageView!
