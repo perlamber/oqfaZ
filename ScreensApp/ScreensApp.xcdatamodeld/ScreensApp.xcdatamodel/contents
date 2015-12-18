@@ -6,11 +6,11 @@
     <entity name="Evento" representedClassName=".Evento" syncable="YES">
         <attribute name="env_data_ultima_alteracao" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="evn_cidade" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="evn_data_cadastro" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="evn_data_evento" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evn_data_cadastro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evn_data_evento" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="evn_descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="evn_endereco" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="evn_imagem" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="evn_imagem" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="evn_local_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="evn_local_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="evn_nome" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,8 +29,8 @@
         <attribute name="usu_whatsapp" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="187" positionY="-225" width="128" height="163"/>
-        <element name="Evento" positionX="-279" positionY="-135" width="128" height="238"/>
         <element name="Categoria" positionX="-27" positionY="177" width="128" height="58"/>
+        <element name="Evento" positionX="-279" positionY="-135" width="128" height="240"/>
+        <element name="Usuario" positionX="187" positionY="-225" width="128" height="163"/>
     </elements>
 </model>

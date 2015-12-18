@@ -10,6 +10,7 @@ import UIKit
 
 class EventoDescricaoViewController: UIViewController {
 
+    @IBOutlet weak var lblDataEvento: UILabel!
     @IBOutlet weak var lblNomeEvento: UILabel!
     @IBOutlet weak var lblNomeRua: UILabel!
     @IBOutlet weak var lblDescricao: UITextView!
@@ -28,13 +29,16 @@ class EventoDescricaoViewController: UIViewController {
         
         lblDescricao.text = evento.evn_descricao
         print("log:\(evento?.evn_descricao)")
-        //lblImagemEvento.image = evento.evn_imagem as! UIImage
         
         lblCriadoPor.text = evento.usuario?.usu_nome
         print("log:\(evento.usuario?.usu_nome)")
         
         lblTelContato.text = evento.usuario?.usu_telefone
         print("log:\(evento.usuario?.usu_telefone)")
+    
+        lblDataEvento.text = evento.evn_data_evento
+        
+        lblImagemEvento.image = UIImage(data: evento.evn_imagem!)
     }
 
     override func didReceiveMemoryWarning() {
